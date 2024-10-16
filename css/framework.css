@@ -6,6 +6,7 @@
 .m-15 {
     margin: 15px;
 }
+
 .m-20 {
     margin: 20px;
 }
@@ -25,25 +26,32 @@
 .mt-20 {
     margin-top: 20px;
 }
+
 .mt-25 {
     margin-top: 25px;
 }
-.ml-10{
+
+.ml-10 {
     margin-left: 10px;
 }
-.mr-5{
+
+.mr-5 {
     margin-right: 5px;
 }
-.mr-10{
+
+.mr-10 {
     margin-right: 10px;
-}
-.mb-20 {
-    margin-bottom: 20px;
 }
 
 .mb-10 {
     margin-bottom: 10px;
 }
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
 
 .p-20 {
     padding: 20px;
@@ -60,10 +68,12 @@
 .pt-15 {
     padding-top: 15px;
 }
+
 .pt-20 {
     padding-top: 20px;
 }
-.pl-15{
+
+.pl-15 {
     padding-left: 15px;
 }
 
@@ -109,6 +119,10 @@
     .mobil-block {
         display: block;
     }
+
+    .mobile-text-c {
+        text-align: center;
+    }
 }
 
 .d-grid {
@@ -139,7 +153,7 @@
 }
 
 .c-yello {
-    color:#f59e0b;
+    color: #f59e0b;
 }
 
 .c-blue {
@@ -159,7 +173,7 @@
 }
 
 .c-green {
-    color:#22c55e;
+    color: #22c55e;
 }
 
 .c-gray {
@@ -189,9 +203,11 @@
 .bg-l-blue {
     background-color: rgba(0, 117, 255, 0.2);
 }
-.bg-red{
+
+.bg-red {
     background-color: #ff0000;
 }
+
 /* end colors */
 /* start postions */
 .relative {
@@ -201,18 +217,22 @@
 /* end postions */
 
 /* start fonts  */
-.fs-13{
+.fs-13 {
     font-size: 13px;
 }
+
 .fs-14 {
     font-size: 14px;
 }
+
 .fs-15 {
     font-size: 15px;
 }
+
 .fs-17 {
     font-size: 17px;
 }
+
 .fs-18 {
     font-size: 18px;
 }
@@ -220,6 +240,7 @@
 .fs-25 {
     font-size: 25px;
 }
+
 .fs-20 {
     font-size: 20px;
 }
@@ -289,9 +310,11 @@
     width: fit-content;
     margin: 10px auto;
 }
-.bo-ccc{
+
+.bo-ccc {
     border: 1px solid #ccc;
 }
-.bo-eee{
+
+.bo-eee {
     border: 1px solid #eee;
 }

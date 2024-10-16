@@ -851,30 +851,52 @@ header .icon img {
 }
 
 /* start profile page */
+.profile-page .img {
+  border-right: 1px solid #eee;
+}
+
 .profile-page .img img {
   width: 120px;
   height: 120px;
 }
-.profile-page .img h2:before{
+
+.profile-page .img h2:before {
   content: '';
   position: absolute;
   width: 60%;
   height: 5px;
   border-radius: 3px;
   background-color: var(--blue-color);
-  bottom: -30px;
+  bottom: -45px;
   left: -1px;
 }
-.profile-page .img h2::after{
+
+.profile-page .img h2::after {
   content: '';
   position: absolute;
-  width:calc(40% + 2px) ;
+  width: calc(40% + 2px);
   height: 5px;
   border-radius: 3px;
   right: -1px;
   background-color: #eee;
-  bottom: -30px;
+  bottom: -45px;
 }
+
+.profile-page .content .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.profile-page .content .box>div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+
+.profile-page .content .box h4 {
+  font-weight: normal;
+}
+
 /* end profile page */
 /* end profile */
 /* start animation */
