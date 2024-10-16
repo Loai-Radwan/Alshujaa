@@ -51,8 +51,6 @@
     margin-bottom: 20px;
 }
 
-
-
 .p-20 {
     padding: 20px;
 }
@@ -115,7 +113,7 @@
     display: block;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .mobil-block {
         display: block;
     }
@@ -299,7 +297,6 @@
 .bot-shape {
     border-radius: 6px;
     padding: 4px 10px;
-
 }
 
 .re-no {

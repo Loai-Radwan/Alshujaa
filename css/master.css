@@ -668,7 +668,7 @@ header .icon img {
 
 .but .taggle-switch::before {
   font-family: "Font Awesome 6 Free";
-  content: '\f00d';
+  content: "\f00d";
   font-weight: 900;
   position: absolute;
   width: 24px;
@@ -689,7 +689,7 @@ header .icon img {
 }
 
 .but .taggle:checked+.taggle-switch::before {
-  content: '\f00c';
+  content: "\f00c";
   color: var(--blue-color);
   left: 50px;
 }
@@ -704,7 +704,6 @@ header .icon img {
 .control form textarea {
   min-height: 180px;
   border: 1px solid #ccc;
-
 }
 
 /* start gentral */
@@ -746,7 +745,7 @@ header .icon img {
 
 /* end social info  */
 /* start wedgest */
-.wedgest input[type='checkbox'] {
+.wedgest input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -759,7 +758,7 @@ header .icon img {
 }
 
 .wedgest label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 15px;
@@ -769,13 +768,13 @@ header .icon img {
 }
 
 .wedgest label:hover::before,
-.wedgest input[type='checkbox']:checked+label::before {
+.wedgest input[type="checkbox"]:checked+label::before {
   border-color: var(--blue-color);
 }
 
 .wedgest label::after {
   font-family: "Font Awesome 6 Free";
-  content: '\f00c';
+  content: "\f00c";
   font-weight: 900;
   font-size: 13px;
   display: flex;
@@ -793,13 +792,13 @@ header .icon img {
   transform: scale(0);
 }
 
-.wedgest input[type='checkbox']:checked+label::after {
+.wedgest input[type="checkbox"]:checked+label::after {
   transform: scale(1);
 }
 
 /* end wedgest */
 /* start backup */
-.backup input[type='radio'] {
+.backup input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -811,7 +810,7 @@ header .icon img {
 }
 
 .backup .data label::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: white;
   width: 18px;
@@ -823,7 +822,7 @@ header .icon img {
   margin-top: 2px;
 }
 
-.backup .data input[type='radio']:checked+label::before {
+.backup .data input[type="radio"]:checked+label::before {
   background-color: var(--blue-color);
   outline-color: var(--blue-color);
 }
@@ -837,7 +836,7 @@ header .icon img {
   transition: 0.3s;
 }
 
-.backup .servers input[type='radio']:checked+.server {
+.backup .servers input[type="radio"]:checked+.server {
   border: 2px solid var(--blue-color);
   color: var(--blue-color);
 }
@@ -861,7 +860,7 @@ header .icon img {
 }
 
 .profile-page .img h2:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 60%;
   height: 5px;
@@ -872,7 +871,7 @@ header .icon img {
 }
 
 .profile-page .img h2::after {
-  content: '';
+  content: "";
   position: absolute;
   width: calc(40% + 2px);
   height: 5px;
