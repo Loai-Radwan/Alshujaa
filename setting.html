@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <!-- start sidebar  -->
+        <div class="sidebar p-20 bg-white relative">
+            <h3 class="text-c mt-0 relative">Alshujaa</h3>
+            <ul>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="index.html"><i
+                            class="fa-regular fa-chart-bar fa-fw"></i>
+
+                        <span> Dashboard </span></a>
+                </li>
+                <li>
+                    <a class="active c-black p-10 d-flex align-c fs-14 rad-6" href="setting.html"><i
+                            class="fa-solid fa-gear fa-fw"></i>
+
+                        <span> Settings </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="profile.html"><i
+                            class="fa-solid fa-user fa-fw"></i> <span> Profile </span></a>
+                </li>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="project.html"><i
+                            class="fa-solid fa-diagram-project fa-fw"></i>
+
+                        <span> Project </span></a>
+                </li>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="courses.html"><i
+                            class="fa-solid fa-graduation-cap fa-fw"></i>
+
+                        <span> Courses </span></a>
+                </li>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="Friends.html"><i
+                            class="fa-regular fa-circle-user fa-fw"></i>
+
+                        <span> Friends </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="files.html"><i
+                            class="fa-solid fa-file fa-fw"></i>
+                        <span> Files </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="c-black p-10 d-flex align-c fs-14 rad-6" href="plans.html"><i
+                            class="fa-regular fa-credit-card fa-fw"></i>
+
+                        <span> Plans </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end sidebar  -->
+        <!-- start content  -->
+        <div class="content w-full">
+            <!-- start header  -->
+            <header class="d-flex align-c bg-white p-15 jc-s-bet">
+                <div class="search relative">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    <input class="p-10" type="search" placeholder="Type A Keyword" />
+                </div>
+                <div class="icon d-flex align-c">
+                    <a class="c-black" href="profile.html">
+                        <span class="relative not">
+                            <i class="fa-regular fa-bell fa-lg fa-lg"></i>
+                        </span>
+                    </a>
+
+                    <a href="profile.html"><img src="img/avatar.png" alt="photo" /></a>
+                </div>
+            </header>
+            <!--end header  -->
+            <h1 class="relative">Settings</h1>
+            <!-- start setting page  -->
+
+            <div class="setting-page m-20 d-grid gap-20">
+                <!-- start control  -->
+
+                <div class="control bg-white rad-10 p-20">
+                    <h2 class="m-0 mb-10">Site Control</h2>
+                    <p class="c-gray m-0 mb-10">
+                        Control The Website If There Is Maintenance
+                    </p>
+                    <div class="flex-bet mb-20">
+                        <div class="ingo">
+                            <p class="mb-10">Website Control</p>
+                            <p class="c-gray fs-14 m-0">
+                                Open/Close Website And Type The Reason
+                            </p>
+                        </div>
+                        <label class="but">
+                            <input checked class="taggle" type="checkbox" />
+                            <div class="taggle-switch"></div>
+                        </label>
+                    </div>
+                    <form>
+                        <textarea class="p-10 mb-10 w-full" placeholder="Close Message Content "></textarea>
+                    </form>
+                </div>
+                <!-- end control  -->
+                <!-- start genral info  -->
+                <div class="genral bg-white rad-10 p-20">
+                    <h2 class="m-0 mb-10">Genral Info</h2>
+                    <p class="c-gray m-0 mb-10">
+                        General Information About Your Account
+                    </p>
+                    <form>
+                        <label for="first" class="c-gray d-block mb-10 mt-20">First Name</label>
+                        <input class="w-full d-block p-10 rad-6 bo-ccc" id="first" placeholder="First Name"
+                            type="text" />
+
+                        <label for="last" class="c-gray d-block mb-10 mt-20">Last Name</label>
+                        <input class="w-full d-block p-10 rad-6 bo-ccc" id="last" placeholder="Last Name" type="text" />
+
+                        <label for="email" class="c-gray d-block mb-10 mt-20">Email</label>
+
+                        <input class="email mr-10 w-full d-block p-10 rad-6 bo-ccc" id="email" disabled
+                            value="Loai@gmail.com" type="email" />
+                        <a class="c-blue" href="#">Change</a>
+                    </form>
+                </div>
+                <!-- end genral info  -->
+                <!-- start security -->
+                <div class="security bg-white rad-10 p-20">
+                    <h2 class="m-0 mb-10">Secuirty Info</h2>
+                    <p class="c-gray m-0 mb-10">
+                        Security Information About Your Account
+                    </p>
+                    <div class="box flex-bet pb-15 mb-20 mt-20">
+                        <div class="info">
+                            <p class="m-0">Passward</p>
+
+                            <p class="c-gray fs-14 m-0">Last Change On 25/10/2021</p>
+                        </div>
+                        <a class="bg-blue bottom c-white w-fit bot-shape" href="#">change</a>
+                    </div>
+                    <div class="box flex-bet pb-15 mb-20 mt-10 mt-5">
+                        <div class="info">
+                            <p class="m-0">Two-Factor Authentication</p>
+
+                            <p class="c-gray fs-14 m-0 mt-5">Enable/Disable The Feature</p>
+                        </div>
+                        <label class="but">
+                            <input class="taggle" type="checkbox" checked />
+                            <div class="taggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="box flex-bet pb-15 mb-20 mt-10">
+                        <div class="info">
+                            <p class="m-0">Devices</p>
+
+                            <p class="c-gray fs-14 m-0 mt-5">
+                                Check The Login Devices List
+                            </p>
+                        </div>
+                        <a class="bot-shape bg-eee" href="#">Devices</a>
+                    </div>
+                </div>
+                <!-- end security -->
+                <!-- start social info -->
+                <div class="social-info bg-white rad-10 p-20">
+                    <h2 class="m-0 mb-10">Social Info</h2>
+                    <p class="c-gray m-0 mb-10">Social Media Information</p>
+                    <form>
+                        <div class="box flex bg-eee bo-ccc rad-6 mt-20 c-gray">
+                            <i class="fa-brands fa-twitter p-10"></i>
+                            <input class="p-10 bg-eee w-full" type="text " placeholder="Twitter Username" />
+                        </div>
+                        <div class="box flex bg-eee bo-ccc rad-6 mt-20 c-gray">
+                            <i class="fa-brands fa-facebook p-10"></i>
+                            <input class="p-10 bg-eee w-full" type="text " placeholder="Facebook Username" />
+                        </div>
+                        <div class="box flex bg-eee bo-ccc rad-6 mt-20 c-gray">
+                            <i class="fa-brands fa-youtube p-10"></i>
+                            <input class="p-10 bg-eee w-full" type="text " placeholder="Youtube Username" />
+                        </div>
+                        <div class="box flex bg-eee bo-ccc rad-6 mt-20 c-gray">
+                            <i class="fa-brands fa-linkedin p-10"></i>
+                            <input class="p-10 bg-eee w-full" type="text " placeholder="Linkedin Username" />
+                        </div>
+                    </form>
+                </div>
+                <!-- end social info -->
+                <!-- start wedgest control  -->
+                <div class="wedgest bg-white rad-10 p-20">
+                    <h2 class="m-0 mb-10">Widgets Control</h2>
+                    <p class="c-gray m-0 mb-10">Show/Hide Widgets</p>
+                    <form>
+                        <div class="box mt-20">
+                            <input type="checkbox" checked id="a" />
+                            <label class="fs-17" for="a"> Quick Draft </label>
+                        </div>
+                        <div class="box mt-20">
+                            <input type="checkbox" checked id="b" />
+                            <label class="fs-17" for="b"> Yearly Targets </label>
+                        </div>
+                        <div class="box mt-20">
+                            <input type="checkbox" checked id="c" />
+                            <label class="fs-17" for="c"> Tickets Statistics </label>
+                        </div>
+                        <div class="box mt-20">
+                            <input type="checkbox" checked id="d" />
+                            <label class="fs-17" for="d"> Latest News </label>
+                        </div>
+                        <div class="box mt-20">
+                            <input type="checkbox" id="e" />
+                            <label class="fs-17" for="e"> Latest Tasks </label>
+                        </div>
+                        <div class="box mt-20 mb-20">
+                            <input type="checkbox" checked id="f" />
+                            <label class="fs-17" for="f"> Top Search Items </label>
+                        </div>
+                    </form>
+                </div>
+                <!-- end wedgest control  -->
+                <!-- start backup -->
+                <div class="backup  bg-white rad-10 p-20">
+                    <h2 class="m-0 mb-10">Backup Manager</h2>
+                    <p class="c-gray m-0 mb-10">Control Backup Time And Locatio</p>
+                    <form>
+                        <div class="data mt-20 fs-18">
+                            <input id="daily" checked type="radio" name="time" />
+                            <label for="daily"> Daily </label>
+                        </div>
+                        <div class="data mt-20 fs-18">
+                            <input id="weekly" type="radio" name="time" />
+                            <label for="weekly"> Weekly </label>
+                        </div>
+                        <div class="data mt-20 mb-20 fs-18">
+                            <input id="monthly" type="radio" name="time" />
+                            <label for="monthly"> Monthly </label>
+                        </div>
+                        <div class="servers mobil-block d-flex align-c text-c pt-20">
+                            <input id="megaman" type="radio" name="size" />
+                            <div class="server p w-full mb-10 ml-10 rad-10">
+                                <label class="d-block m-15" for="megaman">
+                                    <i class="fa-solid fa-server d-block mb-20"></i>
+                                    Megaman
+                                </label>
+                            </div>
+                            <input id="zero" checked type="radio" name="size" />
+                            <div class="server w-full mb-10 ml-10 rad-10">
+                                <label class="d-block m-15" for="zero">
+                                    <i class="fa-solid fa-server d-block mb-20"></i>
+                                    Zero
+                                </label>
+                            </div>
+                            <input id="sigma" type="radio" name="size" />
+                            <div class="server w-full mb-10 ml-10 rad-10">
+                                <label class="d-block m-15" for="sigma">
+                                    <i class="fa-solid fa-server d-block mb-20"></i>
+                                    Sigma
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- end backup -->
+            </div>
+            <!-- end setting page  -->
+        </div>
+    </div>
+</body>
+
+</html>
