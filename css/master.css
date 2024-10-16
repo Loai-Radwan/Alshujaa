@@ -845,9 +845,7 @@ header .icon img {
 
 /* end settings */
 /* strat profile */
-.profile-page {
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-}
+
 
 /* start profile page */
 .profile-page .img {
