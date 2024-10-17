@@ -217,6 +217,9 @@ header .icon img {
 }
 
 /* start welcome */
+.welcome{
+  overflow: hidden;
+}
 .welcome .first img {
   width: 200px;
   margin-bottom: -10px;
@@ -959,8 +962,9 @@ header .icon img {
 /* start projedt   */
 /* start project-page */
 .project-page {
-  grid-template-columns:repeat(auto-fill,minmax(450px, 1fr)) ;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
+
 @media (max-width: 767px) {
   .project-page {
     grid-template-columns: minmax(200px, 1fr);
@@ -969,73 +973,128 @@ header .icon img {
     gap: 10px;
   }
 }
+
 /* start project  */
-.project > span{
+.project>span {
   position: absolute;
   right: 10px;
   top: 15px;
 }
-.project .imges{
+
+.project .imges {
   min-height: 80px;
 }
-.project .imges a{
+
+.project .imges a {
   position: absolute;
-  left: 0 ;
+  left: 0;
   bottom: 0;
 }
-.project .imges a:hover{
+
+.project .imges a:hover {
   z-index: 10;
 }
-.project .imges a img{
+
+.project .imges a img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 2px solid white;
 }
-.project .imges a:nth-child(2){
+
+.project .imges a:nth-child(2) {
   left: 25px;
 }
-.project .imges a:nth-child(3){
+
+.project .imges a:nth-child(3) {
   left: 50px;
 }
-.project .imges a:nth-child(4){
+
+.project .imges a:nth-child(4) {
   left: 75px;
 }
-.project .imges a:nth-child(5){
+
+.project .imges a:nth-child(5) {
   left: 100px;
 }
-.project .do{
+
+.project .do {
   border-top: 1px solid #eee;
   justify-content: flex-end;
 }
-@media (max-width:767px){
-  .project .do{
+
+@media (max-width:767px) {
+  .project .do {
     flex-direction: column;
   }
+
   .project .do span {
     margin-bottom: 15px;
     width: fit-content;
   }
 }
-.project .progress{
+
+.project .progress {
   border-top: 1px solid #eee;
 
 }
-.project .progress .the-progress{
+
+.project .progress .the-progress {
   height: 8px;
   width: 260px;
 }
-@media (max-width:767px){
+
+@media (max-width:767px) {
   .project .progress {
     flex-direction: column;
   }
-  .project .progress .the-progress{
+
+  .project .progress .the-progress {
     margin-bottom: 15px;
   }
 }
+
 /* end project  */
 /* end project-page */
 /* end projedt   */
+/* start courses page  */
+.course-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .course-page {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+
+.course-page .icon {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  left: 16px;
+  top: 15px;
+}
+.course-page .box {
+  overflow: hidden;
+}
+.course-page .info p {
+  line-height: 1.7;
+}
+
+.course-page .down {
+  border-top: 1px solid #eee;
+}
+
+.course-page .down .click {
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  transform: translateX(-50%);
+}
+
+/* end courses page  */
 /* start animation */
 @keyframes flash {
   0% {
