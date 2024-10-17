@@ -217,9 +217,10 @@ header .icon img {
 }
 
 /* start welcome */
-.welcome{
+.welcome {
   overflow: hidden;
 }
+
 .welcome .first img {
   width: 200px;
   margin-bottom: -10px;
@@ -1075,10 +1076,13 @@ header .icon img {
   border-radius: 50%;
   left: 16px;
   top: 15px;
+  border: 2px solid white;
 }
+
 .course-page .box {
   overflow: hidden;
 }
+
 .course-page .info p {
   line-height: 1.7;
 }
