@@ -102,6 +102,7 @@ body {
 }
 
 @media (max-width: 767px) {
+
   .sidebar h3::before,
   .sidebar h3::after {
     display: none;
@@ -191,13 +192,11 @@ header .icon img {
   height: 3px;
   left: 0;
   bottom: -15px;
-  background-image: linear-gradient(
-    to right,
-    black 25%,
-    white 25%,
-    white 75%,
-    #f1f5f9 75%
-  );
+  background-image: linear-gradient(to right,
+      black 25%,
+      white 25%,
+      white 75%,
+      #f1f5f9 75%);
 }
 
 /* start wraper */
@@ -229,7 +228,7 @@ header .icon img {
   }
 }
 
-.welcome > img {
+.welcome>img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -249,7 +248,7 @@ header .icon img {
   }
 }
 
-.welcome .last > div {
+.welcome .last>div {
   flex: 1;
 }
 
@@ -292,7 +291,7 @@ header .icon img {
   height: 3px;
 }
 
-.target .type .rate span > span {
+.target .type .rate span>span {
   position: absolute;
   padding: 3px 5px;
   font-size: 13px;
@@ -302,7 +301,7 @@ header .icon img {
   color: white;
 }
 
-.target .type .rate span > span::after {
+.target .type .rate span>span::after {
   content: "";
   position: absolute;
   border: 7px solid;
@@ -311,27 +310,27 @@ header .icon img {
   left: 13px;
 }
 
-.target .blue .rate span > span::after {
+.target .blue .rate span>span::after {
   border-color: var(--dark-blue) transparent transparent transparent;
 }
 
-.target .yello .rate span > span::after {
+.target .yello .rate span>span::after {
   border-color: hsl(37.76deg 92.06% 50.59%) transparent transparent transparent;
 }
 
-.target .green .rate span > span::after {
+.target .green .rate span>span::after {
   border-color: hsl(142.64deg 67.09% 46.47%) transparent transparent transparent;
 }
 
-.target .blue .rate span > span {
+.target .blue .rate span>span {
   background-color: var(--dark-blue);
 }
 
-.target .yello .rate span > span {
+.target .yello .rate span>span {
   background-color: hsl(37.76deg 92.06% 50.59%);
 }
 
-.target .green .rate span > span {
+.target .green .rate span>span {
   background-color: hsl(142.64deg 67.09% 46.47%);
 }
 
@@ -685,11 +684,11 @@ header .icon img {
   transition: 0.3s;
 }
 
-.but .taggle:checked + .taggle-switch {
+.but .taggle:checked+.taggle-switch {
   background-color: var(--blue-color);
 }
 
-.but .taggle:checked + .taggle-switch::before {
+.but .taggle:checked+.taggle-switch::before {
   content: "\f00c";
   color: var(--blue-color);
   left: 50px;
@@ -769,7 +768,7 @@ header .icon img {
 }
 
 .wedgest label:hover::before,
-.wedgest input[type="checkbox"]:checked + label::before {
+.wedgest input[type="checkbox"]:checked+label::before {
   border-color: var(--blue-color);
 }
 
@@ -793,7 +792,7 @@ header .icon img {
   transform: scale(0);
 }
 
-.wedgest input[type="checkbox"]:checked + label::after {
+.wedgest input[type="checkbox"]:checked+label::after {
   transform: scale(1);
 }
 
@@ -823,7 +822,7 @@ header .icon img {
   margin-top: 2px;
 }
 
-.backup .data input[type="radio"]:checked + label::before {
+.backup .data input[type="radio"]:checked+label::before {
   background-color: var(--blue-color);
   outline-color: var(--blue-color);
 }
@@ -837,7 +836,7 @@ header .icon img {
   transition: 0.3s;
 }
 
-.backup .servers input[type="radio"]:checked + .server {
+.backup .servers input[type="radio"]:checked+.server {
   border: 2px solid var(--blue-color);
   color: var(--blue-color);
 }
@@ -892,7 +891,7 @@ header .icon img {
   transition: 0.3s;
 }
 
-.profile-page .content .box > div {
+.profile-page .content .box>div {
   min-width: 250px;
   padding: 10px 0 0;
 }
@@ -957,6 +956,86 @@ header .icon img {
 /* end activities */
 /* end other */
 /* end profile */
+/* start projedt   */
+/* start project-page */
+.project-page {
+  grid-template-columns:repeat(auto-fill,minmax(450px, 1fr)) ;
+}
+@media (max-width: 767px) {
+  .project-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* start project  */
+.project > span{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.project .imges{
+  min-height: 80px;
+}
+.project .imges a{
+  position: absolute;
+  left: 0 ;
+  bottom: 0;
+}
+.project .imges a:hover{
+  z-index: 10;
+}
+.project .imges a img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.project .imges a:nth-child(2){
+  left: 25px;
+}
+.project .imges a:nth-child(3){
+  left: 50px;
+}
+.project .imges a:nth-child(4){
+  left: 75px;
+}
+.project .imges a:nth-child(5){
+  left: 100px;
+}
+.project .do{
+  border-top: 1px solid #eee;
+  justify-content: flex-end;
+}
+@media (max-width:767px){
+  .project .do{
+    flex-direction: column;
+  }
+  .project .do span {
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+}
+.project .progress{
+  border-top: 1px solid #eee;
+
+}
+.project .progress .the-progress{
+  height: 8px;
+  width: 260px;
+}
+@media (max-width:767px){
+  .project .progress {
+    flex-direction: column;
+  }
+  .project .progress .the-progress{
+    margin-bottom: 15px;
+  }
+}
+/* end project  */
+/* end project-page */
+/* end projedt   */
 /* start animation */
 @keyframes flash {
   0% {
